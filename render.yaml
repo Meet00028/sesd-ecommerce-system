@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: shopcore-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: FRONTEND_URL
+        sync: false
+        placeholder: "Enter your Vercel frontend URL"
