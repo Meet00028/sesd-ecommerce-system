@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ShoppingCart, Package, CreditCard, CheckCircle } from 'lucide-react';
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 interface Product {
   id: string;

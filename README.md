@@ -18,4 +18,21 @@ This backend is structured using a strict layered architecture:
 * `/src` - Backend Source (Node.js/Express API)
 * `/frontend` - React view layer (Vite/TypeScript)
 
+## 🚀 Deployment Guide
+
+### Backend (Render)
+1. **New Web Service**: Connect your GitHub repo.
+2. **Root Directory**: `(leave empty)`
+3. **Build Command**: `npm install && npm run build`
+4. **Start Command**: `npm start`
+5. **Environment Variables**:
+   - `FRONTEND_URL`: Your Vercel app URL (e.g., `https://shopcore-frontend.vercel.app`).
+
+### Frontend (Vercel)
+1. **New Project**: Import your GitHub repo.
+2. **Framework Preset**: `Vite`
+3. **Root Directory**: `frontend`
+4. **Environment Variables**:
+   - `VITE_API_URL`: Your Render backend URL + `/api` (e.g., `https://shopcore-api.onrender.com/api`).
+
 **Author:** Meet Kumar
