@@ -36,3 +36,4 @@ This backend is structured using a strict layered architecture:
    - `VITE_API_URL`: Your Render backend URL + `/api` (e.g., `https://shopcore-api.onrender.com/api`).
 
 **Author:** Meet Kumar 
+ 
